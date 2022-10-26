@@ -7,10 +7,10 @@ export default function Cau_1() {
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 10000,
-    }).start();
+    Animated.interpolate(fadeAnim, {
+      inputRange: [0, 1],
+      outputRange: ["0deg", "360deg"],
+    });
   }, [fadeAnim]);
 
   return (

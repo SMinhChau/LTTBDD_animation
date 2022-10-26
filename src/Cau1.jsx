@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 import { Animated, Button, StyleSheet, Text, View } from "react-native";
 
-export default function App() {
+export default function Cau_1() {
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {

@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 import React, { useEffect, useRef, useState } from "react";
-function App() {
+export default function Cau03() {
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
   const [isTop, setIsTop] = useState(true);
@@ -113,5 +113,3 @@ const styles = StyleSheet.create({
     height: 70,
   },
 });
-
-export default App;
